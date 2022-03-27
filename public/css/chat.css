@@ -12,3 +12,67 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.button{
+    width: 150px; ;
+    background-color: rgba(115, 88, 161,1);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    display: block;
+  }
+  .button:hover{
+    width: 150px; ;
+    background-color: rgba(43,35,61,1);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    display: block;
+  }
+  .button2{
+      margin-left: 585px;
+      width: 100px;
+      background-color: rgba(115, 88, 161,1);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Fira Sans Condensed', sans-serif;
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      cursor: pointer;
+      display: block;
+    }
+    .button2:hover{
+      margin-left: 585px;
+      width: 100px; ;
+      background-color: rgba(43,35,61,1);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Fira Sans Condensed', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      cursor: pointer;
+      display: block;
+    }

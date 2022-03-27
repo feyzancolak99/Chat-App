@@ -10,6 +10,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <!--[if lt IE 9]> <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> <![endif]-->
     <style>
@@ -20,13 +23,18 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 well">
+
+    <header>
+      <img src="images/mor-logo.png" alt="logo" style="padding-right: 250px;padding-left: 100px;">
+    </header>
+
+    <div class="container-fluid" style="margin-top: 450px; ">
+      <div class="row" >
+        <div class="col-md-6 col-md-offset-3 well"  style="background-color:  rgba(224, 215, 242,1); margin-left: 120px;">
           <!-- <a href="/index.html">Change Settings</a> -->
-          <a class="btn btn-info " href="index.html">
+          <a class=" button " href="index.html">
             <i class="fa fa-cog"></i>
-            Settings</a>
+            Go to Login Page</a>
           <h1 class="room-title text-center"></h1>
 
           <ul class="messages list-group">
@@ -35,18 +43,18 @@
 
           <form id="messageForm">
             <div class="form-group">
-              <i class="" id="icon-type"></i>
+              <i class="" id="icon-type" ></i>
               <p class="help-block typing"></p>
               <div class="input-group">
-                <span class="input-group-addon">
-                  <i class="glyphicon glyphicon-comment"></i>
+                <span class="input-group-addon" style="background-color: rgba(115, 88, 161,1);">
+                  <i class="glyphicon glyphicon-comment" style="color: rgba(224, 215, 242,1);"></i>
                 </span>
                 <input autofocus class="form-control" id="messagebox" name="message" type="text" value=""/>
               </div>
             </div>
 
-            <div class="form-group">
-              <input class="btn btn-default btn-block" type="submit"/>
+            <div class="form-group ">
+              <input class="button2" type="submit"/>
             </div>
 
           </form>
