@@ -12,49 +12,94 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ce999ceac.js" crossorigin="anonymous"></script>
 
     <!--[if lt IE 9]> <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> <![endif]-->
   </head>
   <body>
-    <div class="vertical-center">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 well">
-            <h1 class="text-center">
-              Join Chat !</h1>
-            <form action="/chat.html" class="">
 
-              <div class="form-group">
-                <label for="name">
-                  Display Name :</label>
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-user"></i>
-                  </span>
-                  <input class="form-control" id="name" name="name" placeholder="" type="text">
+    <header>
+      <img src="images/mor-logo.png" alt="logo" style="padding-right: 250px;padding-left: 50px;">
+      <div class="nav-menu">
+          <li>
+              <ul class="ul1"><a href="#">About Us </a></ul>
+              <ul>
+                  <div class="dropdown">
+                      <button class="dropbtn">Meetings <i class="fas fa-chevron-down"></i></button>
+                      <div class="dropdown-content">
+                      <a href="#">Conferences</a>
+                      <a href="#">Personal Meetings</a>
+                      </div>
+                    </div>
+              </ul>
+              <ul class="ul1"><a href="#">How It Works?</a></ul> 
+          </li>
+      </div>
+  </header>
+
+  <main>
+    <div class="all">
+      <div class="sign-up-yazi">
+        <h2 class="create">
+        Do you want to create you meeting? <br>
+        <b><ins><i>Sign Up</i></ins></b> 
+        to create meetings.</h2>
+        <a href="#" target="_blank" class="button">Sign Up</a>
+    </div>
+
+
+      <div>
+        <div>
+          <div>
+            <div style="background-color: transparent; border: transparent;">
+              <h1 class=" giris">
+                Join a Session</h1>
+              <form action="chat.html" class="">
+
+                <div class="custom-select" >
+                  <select class="bilgi" id="language" name="language">
+                      <option value="Turkish">Turkish</option>
+                      <option value="English">English</option>
+                      <option value="German">German</option>
+                      <option value="Spanish">Spanish</option>
+                      <option value="French">French</option>
+                      <option value="Italian">Italian</option>
+                  </select> 
+              </div>
+
+                <div class="field">
+                  <input class="input-text" id="name" name="name" placeholder="" type="text">
+                  <label for="name">
+                    Name Surname</label>
                 </div>
 
-              </div>
-
-              <div class="form-group">
-                <label for="room">Enter Room :</label>
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-comment"></i>
-                  </span>
-                  <input class="form-control" id="room" name="room" placeholder="" type="text"/>
+                <div class="field">
+                  <input class=" input-text" id="room" name="room" placeholder="" type="text"/>
+                  <label for="room">
+                    Session ID</label>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <input class="btn btn-primary btn-block" type="submit" value="Join Chat"/>
-              </div>
+                <div class="form-group">
+                  <input class="button2" type="submit" value="Join"/>
+                </div>
 
-            </form>
+              </form>
 
+            </div>
           </div>
         </div>
       </div>
+
+
     </div>
+  </main>
+
+
+
+    
   </body>
+  <script src="js/join.js"></script>
 </html>
