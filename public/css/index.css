@@ -6,12 +6,17 @@
 body{
     overflow: hidden;
     background: url(../images/small1920.png) no-repeat;
-    padding-left: 235px;
-    padding-right: 235px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    height: auto;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    /*width: 100%;
+    height: auto;*/
+    background-size: auto; 
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 header{
     display: flex;
@@ -19,17 +24,17 @@ header{
 .giris{
     font-family: 'Fira Sans', sans-serif;
     color:rgba(224, 215, 242,1);
-    font-size: 40px;
-    margin-bottom: 35px;
+    font-size:2vw;
+    margin-bottom: 10%;
   }
 
   .custom-select {
     position: relative;
     font-family: 'Fira Sans', sans-serif;
     color: rgba(224, 215, 242,1);
-    font-size: 18px;
-    padding: 15px;
-    width: 320px;
+    font-size: 1vw;
+    padding: 4%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(224, 215, 242,1); 
     background-color: transparent;
@@ -49,8 +54,8 @@ header{
   .select-selected:after {
     position: absolute;
     content: "";
-    top: 22px;
-    right: 15px;
+    top: 40%;
+    right: 8%;
     width: 0;
     height: 0;
     border: 10px solid rgba(224, 215, 242,1);
@@ -60,7 +65,7 @@ header{
   /* Point the arrow upwards when the select box is open (active): */
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent gray transparent;
-    top: 10px;
+    top: 18%;
   }
   
   /* style the items (options), including the selected item: */
@@ -98,40 +103,40 @@ header{
     background-color: transparent;
     color: rgba(224, 215, 242,1);
     font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
-    padding: 15px;
-    width: 320px;
+    font-size: 1vw;
+    padding: 4%;
+    width: 100%;
   }
 
   .field {
     position: relative;
-    margin-top: 40px;
+    margin-top: 15%;
   }
   label {
     position: absolute;
     left: 0;
     top: 1px;
     transition: 0.2s ease all;
-    font-size: 15px;
+    font-size: 1vw;
     color: gray;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
-    padding: 15px;
+    font-size: 1.2vw;
+    padding: 4%;
   }
   .input-text {
     left: 0;
-    top: 20px;
+    top: 2%;
     border-radius: 10px;
     border: 1px solid rgba(224, 215, 242,1); 
     background-color: transparent;
     color: rgba(224, 215, 242,1);
     font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
-    padding: 15px;
-    width: 320px;
+    font-size: 1vw;
+    padding: 4%;
+    width: 100%;
   }
   input:focus + label {
-    top: -40px;
+    top: -80%;
     color: rgba(224, 215, 242,1);
   }
   input[type=text]:focus {
@@ -139,7 +144,7 @@ header{
   }
   .button2{
     margin-top: 35px;
-    width: 150px; ;
+    width: 150px;
     background-color: rgba(224, 215, 242,1);
     border: none;
     border-radius: 10px;
@@ -147,7 +152,7 @@ header{
     text-align: center;
     text-decoration: none;
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 24px;
+    font-size: 1.2vw;
     padding-top: 15px;
     padding-bottom: 15px;
     cursor: pointer;
@@ -161,11 +166,11 @@ header{
     border: none;
     border-radius: 10px;
     color: rgba(224, 215, 242,1);
-    font-weight: bo;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 24px;
+    font-size: 1,2vw;
     padding-top: 15px;
     padding-bottom: 15px;
     cursor: pointer;
@@ -174,14 +179,14 @@ header{
   }
   .nav-menu li{
     display: flex;
-    padding-top: 19px;
+    padding-top: 3%;
 }
 .ul1 a{
     text-decoration: none;
     color: rgba(43,35,61,1);
     font-family: 'Fira Sans Condensed', sans-serif;
     padding: 20px;
-    font-size: 24px;
+    font-size: 1.5vw;
 }
 .ul1 a:hover{
     background-color: rgba(224, 215, 242,1);
@@ -193,13 +198,13 @@ header{
     color: rgba(43,35,61,1);
     font-family: 'Fira Sans Condensed', sans-serif;
     padding: 20px;
-    font-size: 24px;
+    font-size: 1.5vw;
     border: none;
     cursor: pointer;
   }
   
   .dropdown {
-    margin-top: -20px;
+    margin-top: -11%;
     position: relative;
     display: inline-block;
   }
@@ -208,7 +213,7 @@ header{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 170px;
+    min-width: 8%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
@@ -220,7 +225,7 @@ header{
     text-decoration: none;
     display: block;
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 1vw;
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
@@ -236,16 +241,17 @@ header{
   }
   .all{
     display: flex;
-    width: 1450px;
-    margin-top: 150px;
+    width: 75%;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 .sign-up-yazi{
-    width: 865px;
+    width: 100%;
     display: inline-block;
 }
 .button{
-    margin-top: 30px;
-    width: 150px; ;
+    margin-top: 5%;
+    width: 25% ;
     background-color: rgba(43,35,61,1);
     border: none;
     border-radius: 10px;
@@ -253,7 +259,7 @@ header{
     text-align: center;
     text-decoration: none;
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 24px;
+    font-size: 1.3vw;
     padding-top: 15px;
     padding-bottom: 15px;
     cursor: pointer;
@@ -261,8 +267,8 @@ header{
     margin-left: 600px;
   }
   .button:hover{
-    margin-top: 30px;
-    width: 150px; ;
+    margin-top: 5%;
+    width: 25% ;
     background-color: rgba(115, 88, 161,1);
     border: none;
     border-radius: 10px;
@@ -271,7 +277,7 @@ header{
     text-decoration: none;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.3vw;
     padding-top: 15px;
     padding-bottom: 15px;
     cursor: pointer;
@@ -279,14 +285,14 @@ header{
     margin-left: 600px;
   }
   .create{
-    width: 650px;
+    width: 100%;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: rgba(43,35,61,1);
     font-weight: 400;
     margin: auto;
 }
 .girelim{
-  margin-left: 200px;
-  margin-top: -20px;
+  margin-left: 30%;
+  margin-top: -3%;
 }
