@@ -59,7 +59,7 @@
                 <span class="input-group-addon" style="background-color: rgba(115, 88, 161,1);">
                   <i class="glyphicon glyphicon-comment" style="color: rgba(224, 215, 242,1);"></i>
                 </span>
-                <input autofocus class="form-control" id="messagebox" name="message" type="text" value=""/>
+                <input autofocus class="form-control" id="messageBox" name="message" type="text" value=""/>
               </div>
             </div>
 
@@ -93,7 +93,7 @@
             var url = "https://translation.googleapis.com/language/translate/v2?key=AIzaSyDi2mALm1ZObsWnOFVwgc-6j59enxrittg";
             url += "&source=" + $("#language").val();
             url += "&target=" + $("#language").val();
-            url += "&q=" + escape($("#messagebox").val());
+            url += "&q=" + escape($("#messageBox").val());
             $.get(url, function (data, status) {
                 $("#gelenMesaj").val(data.data.translations[0].translatedText);
             });
