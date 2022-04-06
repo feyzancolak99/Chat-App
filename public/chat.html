@@ -65,7 +65,8 @@
                 <span class="input-group-addon" style="background-color: rgba(115, 88, 161,1);">
                   <i class="glyphicon glyphicon-comment" style="color: rgba(224, 215, 242,1);"></i>
                 </span>
-                <input autofocus class="form-control" id="messageBox" name="message" type="text" value=""/>
+                <input autofocus class="form-control" id="messageBox" name="message10" type="text" value=""/ >
+                <output autofocus class="form-control" id="messageBox2" name="message" type="text" value=""></output>
               </div>
             </div>
 
@@ -94,7 +95,7 @@
 
     <script>
       function runSpeechRecognition() {
-          var messageBox = document.getElementById("messageBox");
+          var messageBox2 = document.getElementById("messageBox2");
           var action = document.getElementById("action");
           var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
           var recognition = new SpeechRecognition();
@@ -104,8 +105,8 @@
           };
           recognition.onresult = function(event) {
               var transcript = event.results[0][0].transcript;
-              messageBox.innerHTML =  transcript;
-              messageBox.classList.remove("hide");
+              messageBox2.innerHTML =  transcript;
+              messageBox2.classList.remove("hide");
           };
            recognition.start();
       }
