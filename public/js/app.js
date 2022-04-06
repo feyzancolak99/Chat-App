@@ -128,7 +128,7 @@
 
  // handles submitting of new message
  var $form = $("#messageForm");
- var $message1 = $form.find('output[name=message]') || $form.find('input[name=message10]');
+ var $message1 = $form.find('output[name=message]') ||('input[name=message]');
  $form.on("submit", function(event) {
    event.preventDefault();
    var msg = $message1.val();
